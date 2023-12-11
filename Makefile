@@ -12,16 +12,18 @@
 
 NAME = cub3d
 
-SRC = srcs/main.c \
-		srcs/utils.c
+SRC = src/main.c \
+		src/utils.c \
+		src/play.c \
+		src/init.c
 
 OBJ = $(SRC:.c=.o)
 
 LIBFT_DIR = libft
 LIBFT = libft/libft.a
 
-MINILIBX_DIR = minilibx-linux
-MINILIBX = minilibx-linux/libmlx_Linux.a minilibx-linux/libmlx.a
+MINILIBX_DIR = mlx
+MINILIBX = mlx/libmlx_Linux.a mlx/libmlx.a
 
 CC = cc
 

@@ -6,7 +6,7 @@
 /*   By: lkoletzk <lkoletzk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 11:26:05 by lkoletzk          #+#    #+#             */
-/*   Updated: 2023/12/11 11:41:24 by lkoletzk         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:23:04 by lkoletzk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,11 @@ int	init_mlx_ptr(t_game *game)
 		mlx_destroy_display(game->mlx);
 		return (1);
 	}
-	if (init_mlx_img_addr(game))
-		return (1);
+	// if (init_mlx_img_addr(game))
+	// 	return (1);
 	return (0);
 }
-
-/*Initializes the MLX main window where we print all*/
+/*
 int	init_mlx_img_addr(t_game *game)
 {
 	game->img.img = mlx_new_image(game->mlx, WIN_WIDTH, WIN_HEIGHT);
@@ -54,7 +53,6 @@ int	init_mlx_img_addr(t_game *game)
 	return (0);
 }
 
-/*Initializes the images, adding them to the tab to destroy when we finish*/
 int	init_texture(t_game *game, t_img *texture, char *path)
 {
 	texture->img = mlx_xpm_file_to_image(game->mlx,
@@ -70,7 +68,6 @@ int	init_texture(t_game *game, t_img *texture, char *path)
 	return (0);
 }
 
-/*Initializes the colors of the floor and ceiling*/
 int	init_fc_color(t_game *game, int *color, char *path)
 {
 	int			r;
@@ -94,7 +91,6 @@ int	init_fc_color(t_game *game, int *color, char *path)
 	return (0);
 }
 
-/*Divides the color given in the parsing into R G B values*/
 int	get_colors(int *r, int *g, int *b, char **color_tab)
 {
 	int	i;
@@ -112,4 +108,4 @@ int	get_colors(int *r, int *g, int *b, char **color_tab)
 	if (*r == -1 || *g == -1 || *b == -1)
 		return (1);
 	return (0);
-}
+}*/

@@ -6,11 +6,11 @@
 /*   By: lkoletzk <lkoletzk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 15:48:01 by lkoletzk          #+#    #+#             */
-/*   Updated: 2023/11/30 17:07:55 by lkoletzk         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:23:01 by lkoletzk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../cub3d.h"
+#include "cub3d.h"
 
 static void	put_map(t_game *game, int line, int col);
 static void	put_player(t_game *game, int line, int col, int key);
